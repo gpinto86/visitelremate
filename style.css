@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&family=Prata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Nunito';
+}
+
+body{
+    background: linear-gradient(to top, transparent,rgba(239, 46, 28, .5)), url(img/SunSet001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1000px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 30px;
+    padding: 50px;
+    color: #fff;
+}
+.container header{
+    overflow: hidden;
+}
+.container header h1{
+    float: left;
+}
+.container header nav{
+    float: left;
+}
+.container header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.container header nav ul li{
+    margin: 0 30px;
+}
+.container header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 33px;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+.container header nav ul li a:hover{
+    background-color: #64c7e2;
+    color: #fff;
+}
+.container header .busqueda{
+    float: right;
+}
+.container header .busqueda input{
+    display:inline-block;
+    width: 200px;
+    border: none;
+    background-color: rgba(0,0,0,.4);
+    padding: 7px;
+    outline: none;
+    color: #fff;
+    border-right: 3px;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+.container header .busqueda:hover input{
+    opacity: 1;
+}
+.container header .busqueda i{
+    cursor: pointer;
+}
+.container .contenido{
+    display: flex;
+    position: relative;
+}
+.contenido .linea-decorativa{
+    position: absolute;
+    height: 250px;
+    border-left: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contenido .linea-decorativa .circulo{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: -9px;
+}
+.container .contenido .left{
+    width: 50%;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+.container .contenido .left h2{
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.container .contenido .left p{
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+.container .contenido .left button{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    transition: .5s;
+    cursor: pointer;
+}
+.container .contenido .left button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.container .contenido .left .redes{
+    font-size: 12px;
+    width: fit-content;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .contenido .left .redes a{
+    text-decoration: none;
+    color: #fff;
+}
+.container .contenido .right{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
+}
+.container .contenido .right .popular{
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+.container .contenido .right .contenedor-fotos{
+    display: flex;
+    justify-content: end;
+}
+.container .contenido .right .contenedor-fotos img{
+    width: 25%;
+    margin: 0 10px;
+    border-radius: 10px;
+}
